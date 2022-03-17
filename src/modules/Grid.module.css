@@ -1,0 +1,25 @@
+.designGgrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 300px);
+	gap: 20px;
+	justify-content: center;
+	padding-left: 0px;
+}
+
+.card {
+	list-style: none;
+}
+
+.card:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05)
+}
+.image {
+	border-radius: 10px;
+	height: 220px;
+	width: 300px;
+}
+
+.text {
+	text-align: center;
+}
