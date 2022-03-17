@@ -1,0 +1,33 @@
+.Container {
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.column {
+	max-width: 400px;
+	margin: 20px;
+}
+
+.Container img {
+	border-radius: 10px;
+}
+
+.Container div {
+	text-align: center;
+}
+
+.Heart {
+	color: rgb(192,18,200);
+	font-size: 1.2em;
+	border: 0px;
+	background: none;
+}
+
+.Heart:active {
+	color: rgb(138, 18, 145);
+}
+
+.Heart:visited {
+	color: rgba(192,18,200,0.5);
+}
