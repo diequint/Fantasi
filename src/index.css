@@ -14,6 +14,20 @@ h2 {
 	margin-bottom: 1px;
 }
 
+.blue_btn {
+	color: white;
+	text-decoration: none;
+	margin: 5px;
+	padding: 5px 15px;
+	background: #0023bd;
+	border-radius: 4px;
+	text-align: center;
+  }
+  
+  .blue_btn:hover {
+	background: #002fff;
+  }
+
 ::-webkit-scrollbar {
 	width: 10px;
 }
