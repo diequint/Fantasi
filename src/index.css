@@ -18,7 +18,7 @@ h2 {
 	color: white;
 	text-decoration: none;
 	margin: 5px;
-	padding: 5px 15px;
+	padding: 5px 10px;
 	background: #0023bd;
 	border-radius: 4px;
 	text-align: center;
@@ -28,11 +28,25 @@ h2 {
 	background: #002fff;
 }
 
+.red_btn {
+	color: white;
+	text-decoration: none;
+	margin: 5px;
+	padding: 5px 10px;
+	background: #bd0000;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.red_btn:hover {
+	background: #ff2d2d;
+}
+
 .white_btn {
 	color: #0023bd;
 	text-decoration: none;
 	margin: 5px;
-	padding: 5px 15px;
+	padding: 5px 10px;
 	background: white;
 	border: 0.5px solid #0023bd;
 	border-radius: 4px;

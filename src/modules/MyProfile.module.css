@@ -1,0 +1,41 @@
+/*Sidebar and main structure*/
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 20px;
+}
+
+.leftCont {
+	width: 25%;
+	margin-right: 1%;
+}
+
+.rightCont {
+	width: 70%;
+}
+
+/*Grid of recient proyects*/
+.proyectCard {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 250px);
+	gap: 20px;
+	justify-content: left;
+	padding-left: 0px;
+}
+
+.proyectCard li {
+	list-style: none;
+}
+
+.proyectCard img {
+	border-radius: 10px;
+	height: 180px;
+	width: 240px;
+}
+
+.proyectCard li p {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
