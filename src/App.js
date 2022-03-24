@@ -3,6 +3,7 @@ import { Designs } from "./pages/Designs";
 import { DesignDetails } from "./pages/Details";
 import { Editor, EmptyEditor } from "./pages/Editor";
 import { Access } from "./pages/Access";
+import { About } from "./pages/About";
 import { Err404 } from "./pages/Err404";
 import { Routes, Route, Link } from "react-router-dom";
 
@@ -15,6 +16,7 @@ function App() {
 			<Route exact path="/editor/:designId" element={<Editor/>}/>
             <Route exact path="/editor" element={<EmptyEditor/>}/>
 			<Route exact path="/access" element={<Access/>}/>
+			<Route exact path="/about" element={<About/>}/>
 			<Route path="*" element={<Err404/>}/>
         </Routes>
 	);
