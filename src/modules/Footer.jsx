@@ -25,22 +25,32 @@ export function Footer() {
 				<h4>Apoyar</h4>
 				<p>Al permitir los anuncios dentro ya nos estás apoyando, sin embargo, también puede hacerlo de estas maneras:</p>
 				<li>
-					<Link to="/" className={styles.link_footer}> Hacer un donativo</Link>
+					<a className={styles.link_footer} target="_blank" rel="noreferrer" href="https://www.paypal.com">Hacer un donativo</a>
 				</li>
 				<li>
-					<Link to="/" className={styles.link_footer}> Colaborar en Github</Link>
+					<a className={styles.link_footer} target="_blank" rel="noreferrer" href="https://www.paypal.com"> Colaborar en Github</a>
 				</li>
 			</ul>
 			<ul className={styles.socialmedia}>
 				<h4>Redes</h4>
 				<p><span className={styles.copyleft}>&copy;</span> Fantasi 2022</p>
-				<li><img src="./resources/facebook.png" alt="FB icon"/></li>
-				<li><img src="./resources/twitter.png" alt="TW icon"/></li>
-				<li><img src="./resources/instagram.png" alt="IG icon"/></li>
-				<li><img src="./resources/youtube.png" alt="YT icon"/></li>
-				<li><img src="./resources/whatsapp.png" alt="WA icon"/></li>
+				<li>
+				<a target="_blank" rel="noreferrer" href="https://www.facebook.com/fantasi">
+					<img src="./resources/facebook.png" alt="FB icon"/></a>
+				</li>
+				<li>
+					<a target="_blank" rel="noreferrer" href="https://www.instagram.com/fantasi">
+					<img src="./resources/instagram.png" alt="IG icon"/></a>
+				</li>
+				<li>
+					<a target="_blank" rel="noreferrer" href="https://www.twitter.com/fantasi">
+					<img src="./resources/twitter.png" alt="TW icon"/></a>
+				</li>
+				<li>
+					<a target="_blank" rel="noreferrer" href="https://www.youtube.com/c/fantasi">
+					<img src="./resources/youtube.png" alt="YT icon"/></a>
+				</li>
 			</ul>
 		</div>
-		
 	</footer>);
 }

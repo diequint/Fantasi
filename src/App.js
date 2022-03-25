@@ -5,7 +5,7 @@ import { Editor, EmptyEditor } from "./pages/Editor";
 import { Access } from "./pages/Access";
 import { About } from "./pages/About";
 import { Err404 } from "./pages/Err404";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
 	return (
