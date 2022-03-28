@@ -1,6 +1,8 @@
 import designs from "../modules/designs.json";
 import styles from "./Details.module.css";
 import { Link } from "react-router-dom";
+import { NavMenu } from "../modules/NavMenu";
+import { Footer } from "../modules/Footer";
 
 export function DesignDetails() {
 	//Get the url name and look for the last slash, after that there is the designID
@@ -8,7 +10,9 @@ export function DesignDetails() {
 	var i = url.lastIndexOf("/");
 	url = (url.slice(i+1))-1;
 
-	return(<main className={styles.Container}>
+	return(<>
+	<NavMenu />
+	<main className={styles.Container}>
 		<img className={styles.column} src="https://thiscatdoesnotexist.com/" alt={designs[url].name}></img>
 		<div className={styles.column}>
 			<p><strong>Título:</strong> {designs[url].name}<br></br>
@@ -23,5 +27,7 @@ export function DesignDetails() {
 			<br></br><br></br>
 			<Link to={"/designs"} className="white_btn">Volver a diseños</Link>
 		</div>
-	</main>);
+	</main>
+	<Footer />
+	</>);
 }

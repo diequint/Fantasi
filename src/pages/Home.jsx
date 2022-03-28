@@ -1,7 +1,11 @@
 import styles from "./Home.module.css";
+import { Footer } from "../modules/Footer";
+import { NavMenu } from "../modules/NavMenu";
 
 export function Home() {
-	return(<><h2>Bienvenido a Fantasi</h2>
+	return(<>
+	<NavMenu />
+	<h2>Bienvenido a Fantasi</h2>
 	<main className={styles.main}>
 		<p>Fantasi es una herramienta ideal para la rápida creación de sitios web personales, así como empresariales, tiendas online, sitios de noticias, paginas gubernamentales, etc.</p>
 		<img className={styles.image} src="./resources/create-pages.png" alt="Ups, aquí iba ina imagen :c"/>
@@ -23,5 +27,6 @@ export function Home() {
 			</div>
 		</div>
 	</main>
+	<Footer />
 	</>);
 }
