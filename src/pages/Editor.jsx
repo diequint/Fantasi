@@ -1,7 +1,7 @@
-import designs from "../modules/designs.json";
 import styles from "./Editor.module.css";
 import {Link} from "react-router-dom";
 import { NavMenu } from "../modules/NavMenu";
+import { PageEditor } from "../modules/PageEditor";
 import { Footer } from "../modules/Footer";
 
 //TODO: Generate modules to customize the design chosen
@@ -11,11 +11,7 @@ export function Editor() {
 	url = (url.slice(i+1))-1;
 	return(<>
 		<NavMenu />
-		<main >
-			<img src="https://thiscatdoesnotexist.com/" alt={designs[url].name}></img>
-			<br></br>
-			<p>Aquí van los menús, botones, etc del editor</p>
-		</main>
+		<PageEditor />
 		<Footer />
 	</>);
 }

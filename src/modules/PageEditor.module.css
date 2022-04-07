@@ -1,0 +1,58 @@
+.Editor {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 550px;
+	margin:0;
+}
+.leftPanel, .rightPanel, .centerPanel {
+	height: 100%;
+	flex: 100%;
+}
+
+.leftPanel {
+	width: 50px;
+	background: #000000;
+}
+
+.centerPanel {
+	width: 75%;
+	background: #3c3c3c;
+	color: white;
+	font-size: 15pt;
+	font-weight: bolder;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.plantilla
+{
+	width: 95%;
+	height: 85%;
+	background-color: white;
+	color: black;
+	font-size: 15pt;
+	font-weight: bolder;
+}
+
+.rightPanel {
+	background: #dadada;
+	width: 20%;
+	padding-left: 10px;
+}
+
+.icon {
+	padding: 10px;
+	margin: 10px 5px;
+	background: white;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.icon:hover {
+	background: #dadada;
+	border: 0.5px;
+}
