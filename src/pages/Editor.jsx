@@ -6,9 +6,6 @@ import { Footer } from "../modules/Footer";
 
 //TODO: Generate modules to customize the design chosen
 export function Editor() {
-	var url = window.location.pathname;
-	var i = url.lastIndexOf("/");
-	url = (url.slice(i+1))-1;
 	return(<>
 		<NavMenu />
 		<PageEditor />
@@ -49,7 +46,7 @@ export function EmptyEditor(){
 		</ul>
 		<br></br>
 		<h3>¿Sigues con dudas?</h3>
-		<p>Mira este sensillo tutorial</p>
+		<p>Mira este sencillo tutorial</p>
 	</main>
 	<Footer />
 	</>);

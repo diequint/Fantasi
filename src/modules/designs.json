@@ -1,23 +1,23 @@
 [
 	{
 		"id": 1,
-		"name": "Diseño chevere 1",
+		"name": "Plantilla Menú QR",
 		"category": "Tienda",
-		"preview": "https://thiscatdoesnotexist.com/",
+		"preview": "./resources/miniaturas/menu.jpg",
 		"popularity": 3686.429
 	},
 	{
 		"id": 2,
-		"name": "Diseño chevere 2",
-		"category": "Blog",
-		"preview": "https://thiscatdoesnotexist.com/",
+		"name": "Plantilla Convoca Evento",
+		"category": "Social",
+		"preview": "./resources/miniaturas/evento.jpg",
 		"popularity": 3686.429
 	},
 	{
 		"id": 3,
-		"name": "Diseño chevere 3",
-		"category": "Tienda",
-		"preview": "https://thiscatdoesnotexist.com/",
+		"name": "Plantilla Lista Todo",
+		"category": "Social",
+		"preview": "./resources/miniaturas/todo.jpg",
 		"popularity": 3686.429
 	},
 	{

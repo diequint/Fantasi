@@ -1,13 +1,20 @@
 import { useState } from 'react';
-import { Err404 } from '../pages/Err404';
 import styles from "./PageEditor.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHand, faArrowPointer, faFont,
 		faImage, faLink, faMobileScreen,
 		faAlignJustify, faAlignCenter, faAlignRight,
-		faAlignLeft, faComputer} from '@fortawesome/free-solid-svg-icons'
+		faAlignLeft, faComputer} from '@fortawesome/free-solid-svg-icons';
+import { Plantilla_Menu } from '../pages/plantillas/Menu';
+import { Plantilla_Evento } from '../pages/plantillas/Evento';
+import { Plantilla_Todo } from '../pages/plantillas/Todo';
+// import { Plantilla_Blog } from '../pages/plantillas/Blog';
+// import { Plantilla_Chat } from '../pages/plantillas/Chat';
 
 export function PageEditor() {
+	var url = window.location.pathname;
+	var i = url.lastIndexOf("/");
+	url = (url.slice(i+1));
 	const [panel, cambiaPanel] = useState('drag');
 	const [color1, cambiaModo1] = useState('blue');
 	const [color2, cambiaModo2] = useState('blue');
@@ -70,6 +77,12 @@ export function PageEditor() {
 		cambiaPanel('device');
 	}
 	return(<>
+		<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+		crossorigin="anonymous"
+		/>
 		<main className={styles.Editor}>
 		<div className={styles.leftPanel}>
 			<div className={styles.icon} onClick={dragMode} style={{backgroundColor: color1}} ><FontAwesomeIcon icon={faHand}/></div>
@@ -82,9 +95,14 @@ export function PageEditor() {
 		<div className={styles.centerPanel}>
 			<p>Esta es una prueba para visualizar el sitio en html</p>
 			<div className={styles.plantilla}>
-				{
-					<Err404/>
-				}
+				{url === '1' ? <Plantilla_Menu/> : null}
+				{url === '2' ? <Plantilla_Evento/> : null}
+				{url === '3' ? <Plantilla_Todo/> : null}
+				{/* {url === '3' ? <Plantilla_Chat/> : null} */}
+				{/* {url === '4' ? <Plantilla_Menu/> : null} */}
+				{/* {url === '5' ? <Plantilla_Menu/> : null} */}
+				{/* {url === '6' ? <Plantilla_Menu/> : null} */}
+				{/* {url === '7' ? <Plantilla_Menu/> : null} */}
 			</div>
 		</div>
 		<div className={styles.rightPanel}>
@@ -104,7 +122,10 @@ function TextButton() {
 		{
 			// Icono font awesome para centrar, justificar
 			<>
-			<FontAwesomeIcon icon={faAlignJustify}/>	<FontAwesomeIcon icon={faAlignCenter}/>	<FontAwesomeIcon icon={faAlignRight}/>	<FontAwesomeIcon icon={faAlignLeft}/>
+			<FontAwesomeIcon icon={faAlignJustify}/> 
+			<FontAwesomeIcon icon={faAlignCenter}/> 
+			<FontAwesomeIcon icon={faAlignRight}/> 
+			<FontAwesomeIcon icon={faAlignLeft}/>
 			</>
 		}
 		<p>Fuente</p>

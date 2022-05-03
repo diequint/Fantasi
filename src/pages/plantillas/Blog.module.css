@@ -1,0 +1,18 @@
+.contenedor
+{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	border: 3px solid #000;
+	border-radius: 10px;
+	background-image: linear-gradient(to bottom, rgb(2, 0, 134) 60%, rgb(0, 133, 77) 95%);
+	color: aliceblue;
+}
+.card
+{
+	width: 80%;
+	margin: auto;
+	background-color: aliceblue;
+	margin: 10px;
+	color: #000;
+}
